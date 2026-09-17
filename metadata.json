@@ -1,0 +1,6 @@
+{
+  "name": "AttendX",
+  "description": "Offline Attendance & Payroll Management System with Attendance, Salary Engine, Overtime, Advances, and Reports",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

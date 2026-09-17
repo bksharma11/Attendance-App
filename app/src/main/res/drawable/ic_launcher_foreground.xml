@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Centered within 66dp safe area (21dp to 87dp) -->
+    <!-- Calendar Card Base -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,28 h44 c3.31,0 6,2.69 6,6 v42 c0,3.31 -2.69,6 -6,6 H32 c-3.31,0 -6,-2.69 -6,-6 V34 c0,-3.31 2.69,-6 6,-6 z" />
+    <!-- Header Banner -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M32,28 h44 c3.31,0 6,2.69 6,6 v8 H26 v-8 c0,-3.31 2.69,-6 6,-6 z" />
+    <!-- Calendar Rings -->
+    <path
+        android:fillColor="#93C5FD"
+        android:pathData="M38,24 h4 v7 h-4 z M66,24 h4 v7 h-4 z" />
+    <!-- Checkmark representing verified attendance -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M48,63.5 l-8,-8 l2.83,-2.83 l5.17,5.17 l13.17,-13.17 l2.83,2.83 z" />
+    <!-- Status Dots -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M36,46 h8 v3 h-8 z M64,46 h8 v3 h-8 z M50,46 h8 v3 h-8 z" />
+</vector>
