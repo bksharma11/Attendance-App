@@ -461,13 +461,22 @@ fun EmployeeFormDialog(
     var phone by remember { mutableStateOf(initial?.phone ?: "") }
     var salaryType by remember { mutableStateOf(initial?.salaryType ?: SalaryType.MONTHLY) }
     var dailyRupees by remember {
-        mutableStateOf(if (initial != null) (initial.dailySalary / 100.0).toString() else "1000")
+        mutableStateOf(if (initial != null) {
+            val amt = initial.dailySalary / 100.0
+            if (amt % 1.0 == 0.0) amt.toLong().toString() else amt.toString()
+        } else "1000")
     }
     var monthlyRupees by remember {
-        mutableStateOf(if (initial != null) (initial.monthlySalary / 100.0).toString() else "45000")
+        mutableStateOf(if (initial != null) {
+            val amt = initial.monthlySalary / 100.0
+            if (amt % 1.0 == 0.0) amt.toLong().toString() else amt.toString()
+        } else "45000")
     }
     var otRateRupees by remember {
-        mutableStateOf(if (initial != null) (initial.overtimeRate / 100.0).toString() else "200")
+        mutableStateOf(if (initial != null) {
+            val amt = initial.overtimeRate / 100.0
+            if (amt % 1.0 == 0.0) amt.toLong().toString() else amt.toString()
+        } else "200")
     }
     var joinDate by remember { mutableStateOf(initial?.joiningDate ?: "2026-09-01") }
 
